@@ -16,8 +16,20 @@
     header {
       background: #001f3f;
       color: white;
-      padding: 2rem;
+      padding: 6rem 2rem 2rem;
       text-align: center;
+      position: relative;
+    }
+    .headshot {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #e8f1ff;
+      background: white;
     }
     section {
       padding: 2rem;
@@ -36,6 +48,20 @@
       padding: 1rem;
       border-radius: 5px;
     }
+    /* button-style link */
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      background: #001f3f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .btn:hover {
+      background: #014174;
+    }
     footer {
       background: #001f3f;
       color: white;
@@ -47,22 +73,19 @@
 </head>
 <body>
   <header>
+    <img src="https://github.com/DATAWoman2005/personal-website/blob/main/headshot2.jpeg?raw=true" alt="Adijat Adenaike" class="headshot">
     <h1>Adijat Adenaike</h1>
     <p>Machine Learning Engineer | Generative AI Consultant | MSc Data Science for Health and Social Care</p>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>
-      I am a results-oriented machine learning engineer with two years of experience building predictive models that drive public health impact. My background bridges data science and social care, with a focus on ethical AI, health equity, and automated insights. I specialize in deploying models and dashboards that inform real-world interventions—most recently improving clinic attendance by 12% through ML-triggered SMS reminders. I also bring consulting experience in using large language models and no-code platforms for automation.
-    </p>
+    <p>I am a results-oriented machine learning engineer with two years of experience building predictive models that drive public health impact. My background bridges data science and social care, with a focus on ethical AI, health equity, and automated insights. I specialize in deploying models and dashboards that inform real-world interventions—most recently improving clinic attendance by 12% through ML-triggered SMS reminders. I also bring consulting experience in using large language models and no-code platforms for automation.</p>
   </section>
 
   <section id="msc">
     <h2>MSc in Data Science for Health and Social Care</h2>
-    <p>
-      I am currently completing my MSc at the University of Edinburgh. This program has equipped me with strong foundations in statistical modelling, machine learning, privacy-preserving data practices, and real-world health data workflows. I’ve applied these skills in practical settings, including survival analysis, mixed-methods research, and data visualization using tools like Quarto, Python, and R.
-    </p>
+    <p>I am currently completing my MSc at the University of Edinburgh. This program has equipped me with strong foundations in statistical modelling, machine learning, privacy-preserving data practices, and real-world health data workflows. I’ve applied these skills in practical settings, including survival analysis, mixed-methods research, and data visualization using tools like Quarto, Python, and R.</p>
   </section>
 
   <section id="projects" class="projects">
@@ -70,18 +93,20 @@
     <div class="project">
       <h3>Project 1: Generative-AI Health Portal</h3>
       <p>Used OpenAI API + GitHub Pages + no-code tools to automate health info queries. Boosted conversion rate to lab services by 30%.</p>
+      <a href="https://datawoman2005.github.io/outpatient_psych_clinic/" class="btn" target="_blank" rel="noopener">View</a>
     </div>
     <div class="project">
-      <h3>Project 2: Treatment Adherence Risk Model</h3>
-      <p>Built a survival-forest model using pandas to predict non-adherence. Pilot results showed a 10% increase in medication compliance.</p>
+      <h3>Project 2: Project HELP  (R, Cluster, FactoExtra & NbClust)</h3>
+      <p>Built HELP Clustering to segment countries into tiers, directing HELP International aid to countries in dire need.</p>
     </div>
     <div class="project">
       <h3>Project 3: Real-Time Outbreak Monitor</h3>
       <p>Processed 50,000+ clinical notes monthly using NLTK and Naïve Bayes to detect outbreak trends. Saved 70 staff hours/month.</p>
     </div>
     <div class="project">
-      <h3>Project 4: Quarto Health Reports</h3>
-      <p>Created automated R/Python Quarto reports, reducing report drafting time by 5 days.</p>
+      <h3>Project 4: Global Well-Being & Suicide Insights Dashboard (Python, Quarto)</h3>
+      <p>Engineered a Quarto dashboard with Python ETL merging 200 k+ records (2017-22), delivering interactive choropleths and trend analytics</p>
+      <a href="https://datawoman2005.github.io/project_wellbeing/" class="btn" target="_blank" rel="noopener">View</a>
     </div>
     <div class="project">
       <h3>Project 5: Vaccine No-Show Predictor</h3>
